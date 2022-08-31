@@ -1,0 +1,23 @@
+﻿<Window x:Class="ChaoTho.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChaoTho"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2">
+            <DataGrid x:Name="dgvSanPham" FontWeight="Bold" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Mã SP" Binding="{Binding MaSp}"/>
+                    <DataGridTextColumn Header="Tên sản phẩm" Binding="{Binding TenSanPham}"/>
+                    <DataGridTextColumn Header="Đơn giá" Binding="{Binding DonGia}"/>
+                    <DataGridTextColumn Header="Số lượng bán" Binding="{Binding SoLuongBan}"/>
+                    <DataGridTextColumn Header="Nhóm hàng" Binding="{Binding NhomHang}"/>
+                    <DataGridTextColumn Header="Tiền bán" Binding="{Binding TienBan}" Width="*"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>
